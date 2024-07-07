@@ -1,0 +1,39 @@
+
+#container{
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+#container>div{
+    border: 2px solid;
+    border-radius:15px;
+    background-color: rgb(254, 209, 196);
+}
+
+#sort{
+    padding: 6px;
+}
+/* for medium screen */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:767px) {
+    #container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+
+
+
+
+
